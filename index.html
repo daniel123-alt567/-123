@@ -1,0 +1,165 @@
+HTML
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人體重管理系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="site-title">個人體重管理系統</h1>
+            <p class="tagline">輕鬆記錄與管理每日飲食與健康目標，建立永續的好習慣。</p>
+        </div>
+    </header>
+
+    <main class="container content">
+        
+        <!-- 可食用的食物 -->
+        <section class="card">
+            <h2>可食用的食物</h2>
+            <ul class="food-list">
+                <li>
+                    <strong>優質蛋白質：</strong>雞胸肉、鮭魚、豆腐、雞蛋、無糖豆漿
+                </li>
+                <li>
+                    <strong>高纖蔬菜：</strong>花椰菜、菠菜、地瓜葉、高麗菜、小黃瓜
+                </li>
+                <li>
+                    <strong>複合澱粉：</strong>地瓜、糙米飯、燕麥、南瓜、芋頭
+                </li>
+                <li>
+                    <strong>健康油脂與堅果：</strong>橄欖油、酪梨、原味綜合堅果
+                </li>
+            </ul>
+        </section>
+
+        <!-- 管理體重規則 -->
+        <section class="card">
+            <h2>管理體重規則</h2>
+            <ol class="rules-list">
+                <li>每日維持規律作息，並固定於早晨空腹時記錄體重。</li>
+                <li>每日飲水量達到體重（公斤）x 30~40 ml。</li>
+                <li>優先選擇原型食物，避免加工食品與高糖飲料。</li>
+                <li>控制每餐總熱量攝取，並維持均衡的三大營養素比例。</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <script>
+        // JavaScript 程式碼預留區
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('個人體重管理系統首頁載入完成');
+        });
+    </script>
+</body>
+</html>
+/* 全局基礎樣式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333333;
+    padding-bottom: 40px;
+}
+
+/* 容器寬度與響應式邊距 */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 頁首樣式 */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+    padding: 40px 0 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* 卡片區塊樣式 */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.card h2 {
+    font-size: 1.3rem;
+    color: #2b2b2b;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #4a90e2;
+}
+
+/* 列表樣式 */
+.food-list, .rules-list {
+    padding-left: 20px;
+}
+
+.food-list li, .rules-list li {
+    margin-bottom: 12px;
+    color: #495057;
+}
+
+.food-list li:last-child, .rules-list li:last-child {
+    margin-bottom: 0;
+}
+
+.food-list strong {
+    color: #2b2b2b;
+}
+
+/* 手機版微調 */
+@media (max-width: 480px) {
+    .header {
+        padding: 30px 0 20px;
+    }
+
+    .site-title {
+        font-size: 1.5rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .card h2 {
+        font-size: 1.15rem;
+    }
+}
